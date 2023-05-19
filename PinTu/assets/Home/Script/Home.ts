@@ -86,7 +86,7 @@ export default class Home extends cc.Component {
     }
 
     InitData() {
-        HttpUnit.userLogin();
+        // HttpUnit.userLogin();
         HttpUnit.getHomeInfo(HttpUnit.activity_id, 1, (data) => {
             let home_img = data.home_img;
             var self = this;
