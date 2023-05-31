@@ -31,7 +31,7 @@ export default class HttpUnit {
     public static activity_id = 1001;
 
     /** 是否是普通模式 */
-    public static IsNormal: boolean = true;
+    public static IsNormal: boolean = false;
 
     public static Requset(url: string, data: any, caller: any, completed: Function, error: (...args) => void, method: string, responseType: string = "json", headers: [] = null): void {
         let xhr: HttpRequest = new HttpRequest();
