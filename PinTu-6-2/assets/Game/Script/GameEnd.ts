@@ -47,28 +47,16 @@ export default class GameEnd extends cc.Component {
     }
 
     start() {
-        console.log(GameConfig.finishedImg);
-        console.log(this.finishedBg.getComponent(cc.Sprite).spriteFrame);
-        // if (HttpUnit.finishedImage) {
-        //     this.finishedBg.getComponent(cc.Sprite).spriteFrame = HttpUnit.finishedImage;
-        //     this.finishedBg.setContentSize(600, 775);
-        // }
-        // this.adaptiveNoteLayout();
-        console.log(this.finishedBg.width, this.finishedBg.height);
         if (GameConfig.finishedImg) {
             this.finishedBg.getComponent(cc.Sprite).spriteFrame = GameConfig.finishedImg;
-            // this.finishedBg.setContentSize(canvasSize);
             this.setSize();
         } else {
-            let imgUrl = "LevelImg/Finished";
-            GameConfig.loadImg(imgUrl, (img) => {
+            GameConfig.loadImg(GameConfig.finishedImgUrl, (img) => {
                 GameConfig.finishedImg = img;
                 this.finishedBg.getComponent(cc.Sprite).spriteFrame = GameConfig.finishedImg;
-                // this.finishedBg.setContentSize(canvasSize);
                 this.setSize();
             })
         }
-        console.log(this.finishedBg);
     }
 
     adaptiveNoteLayout() {
@@ -142,6 +130,7 @@ export default class GameEnd extends cc.Component {
             let xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log("游戏结束调用上报接口成功", url);
                     self.closeWindow();
                 }
             };

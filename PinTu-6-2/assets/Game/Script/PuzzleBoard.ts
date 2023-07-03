@@ -142,8 +142,6 @@ export class PuzzleBoard extends cc.Component {
                 this.Touch_Choose.width = pieceNode.width;
                 this.Touch_Choose.height = pieceNode.height;
 
-                console.log("-------------------- pieceNode.width:", pieceNode.width);
-
                 let pieceNodewidth = Number(pieceNode.width);
                 let pieceNodeheight = Number(pieceNode.height);
                 this.Touch_Choose.x = Math.floor(endPos.x) + Math.floor(pieceNodewidth / 2);

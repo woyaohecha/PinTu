@@ -57,7 +57,6 @@ export class Piece extends cc.Component {
     onLoad() {
         // this.texture = HttpUnit.level_texture;
         this.texture = GameConfig.levelImgTexture[GameConfig.currentLevelNum];
-        console.log(this.texture, "77");
     }
 
     public init(col: number, row: number, HorizontalNum: number, VerticalNum: number, colWidth: number, colHeight: number) {
@@ -70,7 +69,6 @@ export class Piece extends cc.Component {
         // 升级2.0后setRect失效
         // sprite.spriteFrame = new cc.SpriteFrame(this.texture);
         // let rect = sprite.spriteFrame.getRect();
-        console.log()
         let rect = cc.rect(0, 0, this.texture.width, this.texture.height);
         let newRectWidth = rect.width / VerticalNum;
         let newRectHeight = rect.height / HorizontalNum;

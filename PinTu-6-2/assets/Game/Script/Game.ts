@@ -12,7 +12,6 @@
 import { STATE } from "./PuzzleConstants";
 import { PuzzleBoard } from "./PuzzleBoard";
 import { Timer } from "./Timer";
-import HttpUnit from "../../NetWork/HttpUnit";
 import MySoundMag from "../../MySoundMag";
 import LevelListManager from "./LevelListManager";
 import GameConfig from "../../NetWork/GameConfig";
@@ -141,31 +140,8 @@ export class PuzzleScene extends cc.Component {
 
         this.board.init(this);
 
-        // let level_img = HttpUnit.GetNowLevelInfo().level_img;
-
-        // this.showlabel("当前关卡信息:", JSON.stringify(HttpUnit.GetNowLevelInfo()));
-
         var self = this;
-        // cc.loader.load({ url: level_img, type: "jpg" }, function (err, texture) {
-        //     if (err) {
-        //         console.log("-------------------filePath err:", err);
-        //     }
-        //     if (texture) {
-        //         var Frame = new cc.SpriteFrame(texture);
-        //         HttpUnit.level_texture = texture;
-        //         if (self.winPanel) {
-        //             self.winPanel.getComponent(cc.Sprite).spriteFrame = Frame;
-        //             self.state = STATE.START;
-        //             self.board.reset(self.HorizontalNum, self.VerticalNum);
-        //             self.timer.reset();
-        //             self.timer.run();
-        //             self.winPanel.active = false;
-        //             if (callback) {
-        //                 callback();
-        //             }
-        //         }
-        //     }
-        // })
+
         GameConfig.loadLevelImg(GameConfig.currentLevelNum, (texture) => {
             if (self.winPanel) {
                 var Frame = new cc.SpriteFrame(texture);

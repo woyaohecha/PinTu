@@ -57,13 +57,11 @@ export default class MySoundMag {
                     if (audio) {
                         this.maxtime = audio.duration * 1000;
                         this.nowsoundid = cc.audioEngine.playMusic(audio, isloop);
-                        console.log("音乐id", this.nowsoundid);
                     }
                 }))
             } else {
                 this.maxtime = audio.duration * 1000;
                 this.nowsoundid = cc.audioEngine.playMusic(audio, isloop);
-                console.log("音乐id", this.nowsoundid);
             }
         } else {
             cc.assetManager.loadBundle(boundlename, null, (err: Error, bundle: cc.AssetManager.Bundle) => {

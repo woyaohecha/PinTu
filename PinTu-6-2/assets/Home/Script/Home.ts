@@ -42,10 +42,7 @@ export default class Home extends cc.Component {
 
         let token = this.getBrowserValue("token");
         GameConfig.token = token ? token : GameConfig.token;
-        // this.InitData();
         this.initHome();
-        // HttpUnit.getActivityList(HttpUnit.activity_id);
-
     }
 
     showlabel(str: string, param?) {
@@ -75,42 +72,6 @@ export default class Home extends cc.Component {
         return null;
     }
 
-    // InitData() {
-    //     // HttpUnit.userLogin();
-    //     HttpUnit.getHomeInfo(HttpUnit.activity_id, 1, (data) => {
-    //         let home_img = data.home_img;
-    //         var self = this;
-    //         cc.loader.load({ url: home_img, type: "jpeg" }, function (err, texture) {
-    //             if (err) {
-    //                 console.log("-------------------filePath err:", err);
-    //             }
-    //             if (texture) {
-    //                 var Frame = new cc.SpriteFrame(texture);
-    //                 if (self.Bg) {
-    //                     self.Bg.spriteFrame = Frame;
-    //                 }
-    //             }
-    //         })
-    //     });
-    //     HttpUnit.getActivityList(HttpUnit.activity_id, (data) => {
-    //         if (data.activityInfo.length > 0) {
-    //             HttpUnit.ruleDes = data.activityInfo[0].rule;
-    //             let finishedImageUrl = data.activityInfo[0].bg_url;
-    //             cc.loader.load({ url: finishedImageUrl, type: "jpg" }, function (err, texture) {
-    //                 if (err) {
-    //                     console.log("-------------------filePath err:", err);
-    //                 }
-    //                 if (texture) {
-    //                     var Frame = new cc.SpriteFrame(texture);
-    //                     HttpUnit.finishedImage = Frame;
-    //                 }
-    //             })
-
-    //             // this.showlabel("接口获取activityInfo：", JSON.stringify(data.activityInfo));
-    //             // this.showlabel("接口获取levelList：", JSON.stringify(data.levelList));
-    //         }
-    //     })
-    // }
 
     initHome() {
         let self = this;
@@ -122,20 +83,6 @@ export default class Home extends cc.Component {
 
     OnStartGameBtn() {
         MySoundMag.playSound("Btn");
-        // HttpUnit.getActivityList(HttpUnit.activity_id, (data) => {
-        //     if (data.levelList.length > 0) {
-        //         // 用于考试模式获取服务器进度 从当前进度开始游戏
-        //         if (HttpUnit.LevelNum >= data.levelList.length) {
-        //             HttpUnit.LevelNum = data.levelList.length - 1;
-        //         }
-        //         HttpUnit.LevelInfo = data.levelList;
-        //         if (LevelListManager.passLevels.length == 0) {
-        //             LevelListManager.initPassLevels();
-        //         }
-        //         cc.director.loadScene("Game");
-        //     }
-        // })
-        console.log(GameConfig.levelData.length);
         if (GameConfig.levelData.length > 0) {
             LevelListManager.initPassLevels();
             cc.director.loadScene("Game");
@@ -147,6 +94,4 @@ export default class Home extends cc.Component {
         let Rules = cc.instantiate(this.Rules);
         this.node.addChild(Rules);
     }
-
-    // update (dt) {}
 }

@@ -1,49 +1,100 @@
 {
-    "levelData": [
-        {
-            "id": 1,
-            "level_img_remote": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230511/faba3320-efd6-11ed-892d-8db50c868eff.jpg",
-            "level_name": " 不私自下水游泳",
-            "level_time": 20,
-            "puzzle_cell": "2,2"
-        },
-        {
-            "id": 2,
-            "level_img": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230511/fe3af570-efd6-11ed-8b86-1f829abcbfe6.jpg",
-            "level_name": "不擅自与他人结伴游泳",
-            "level_time": 20,
-            "puzzle_cell": "2,2"
-        },
-        {
-            "id": 3,
-            "level_img": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230511/01bffd80-efd7-11ed-977d-4f2d2cc8fe24.jpg",
-            "level_name": "不在无人带领的情况下游泳",
-            "level_time": 30,
-            "puzzle_cell": "3,2"
-        },
-        {
-            "id": 4,
-            "level_img": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230511/04e72e20-efd7-11ed-977d-4f2d2cc8fe24.jpg",
-            "level_name": "不到无安全设施的水域游泳",
-            "level_time": 30,
-            "puzzle_cell": "3,2"
-        },
-        {
-            "id": 5,
-            "level_img": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230511/14bd22a0-efd7-11ed-977d-4f2d2cc8fe24.jpg",
-            "level_name": "不到不熟悉的水域游泳",
-            "level_time": 50,
-            "puzzle_cell": "3,3"
-        },
-        {
-            "id": 6,
-            "level_img": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230511/0fe6e270-efd7-11ed-b210-851e1b4a9973.jpg",
-            "level_name": "不熟悉水性的学生不擅自下水施救",
-            "level_time": 50,
-            "puzzle_cell": "3,3"
-        }
-    ],
-    "homeImgUrl": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230517/90b83920-f465-11ed-b1e2-2f65407d2fb4.jpg",
-    "finishedImgUrl": "https://mjxsmj.oss-cn-zhangjiakou.aliyuncs.com/cms/20230517/8c2b0fe0-f465-11ed-a0a3-05a14079d59f.jpg",
-    "rule": "1. 点击选择拼图块，将拼图放到想要替换的位置就可以交换两个拼图块；\n2.拼图块放到正确的位置上，右上角会显示对号图标；\n3. 每关将提供已经放置到正确位置的拼图块作为参考；\n4. 拼图全部放置到正确位置后拼图完成，可以进入下一关或者再来一次；\n5.关卡为限时挑战，抓紧时间闯关吧！"
+    "normal": {
+        "levelData": [
+            {
+                "id": 1,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/1.jpg",
+                "level_name": " 不私自下水游泳",
+                "level_time": 20,
+                "puzzle_cell": "2,2"
+            },
+            {
+                "id": 2,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/2.jpg",
+                "level_name": "不擅自与他人结伴游泳",
+                "level_time": 20,
+                "puzzle_cell": "2,2"
+            },
+            {
+                "id": 3,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/3.jpg",
+                "level_name": "不在无人带领的情况下游泳",
+                "level_time": 30,
+                "puzzle_cell": "3,2"
+            },
+            {
+                "id": 4,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/4.jpg",
+                "level_name": "不到无安全设施的水域游泳",
+                "level_time": 30,
+                "puzzle_cell": "3,2"
+            },
+            {
+                "id": 5,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/5.jpg",
+                "level_name": "不到不熟悉的水域游泳",
+                "level_time": 50,
+                "puzzle_cell": "3,3"
+            },
+            {
+                "id": 6,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/6.jpg",
+                "level_name": "不熟悉水性的学生不擅自下水施救",
+                "level_time": 50,
+                "puzzle_cell": "3,3"
+            }
+        ],
+        "homeImgUrl": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/Home.jpg",
+        "finishedImgUrl": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/Finished.jpg",
+        "rule": "1. 点击选择拼图块，将拼图放到想要替换的位置就可以交换两个拼图块；\n2.拼图块放到正确的位置上，右上角会显示对号图标；\n3. 每关将提供已经放置到正确位置的拼图块作为参考；\n4. 拼图全部放置到正确位置后拼图完成，可以进入下一关或者再来一次；\n5.关卡为限时挑战，抓紧时间闯关吧！"
+    },
+    "exam": {
+        "levelData": [
+            {
+                "id": 1,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/1.jpg",
+                "level_name": " 不私自下水游泳",
+                "level_time": 20,
+                "puzzle_cell": "2,2"
+            },
+            {
+                "id": 2,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/2.jpg",
+                "level_name": "不擅自与他人结伴游泳",
+                "level_time": 20,
+                "puzzle_cell": "2,2"
+            },
+            {
+                "id": 3,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/3.jpg",
+                "level_name": "不在无人带领的情况下游泳",
+                "level_time": 30,
+                "puzzle_cell": "3,2"
+            },
+            {
+                "id": 4,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/4.jpg",
+                "level_name": "不到无安全设施的水域游泳",
+                "level_time": 30,
+                "puzzle_cell": "3,2"
+            },
+            {
+                "id": 5,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/5.jpg",
+                "level_name": "不到不熟悉的水域游泳",
+                "level_time": 50,
+                "puzzle_cell": "3,3"
+            },
+            {
+                "id": 6,
+                "level_img": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/6.jpg",
+                "level_name": "不熟悉水性的学生不擅自下水施救",
+                "level_time": 50,
+                "puzzle_cell": "3,3"
+            }
+        ],
+        "homeImgUrl": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/Home.jpg",
+        "finishedImgUrl": "https://yomier-res-1257053852.cos.ap-nanjing.myqcloud.com/PinTuRes/Imgs/Finished.jpg",
+        "rule": "1. 点击选择拼图块，将拼图放到想要替换的位置就可以交换两个拼图块；\n2.拼图块放到正确的位置上，右上角会显示对号图标；\n3. 每关将提供已经放置到正确位置的拼图块作为参考；\n4. 拼图全部放置到正确位置后拼图完成，可以进入下一关或者再来一次；\n5.关卡为限时挑战，抓紧时间闯关吧！"
+    }
 }
