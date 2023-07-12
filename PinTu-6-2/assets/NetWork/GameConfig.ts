@@ -9,7 +9,7 @@ export default class GameConfig {
     private static isLocal: boolean = false;
 
 
-    public static isNormal: boolean = true;
+    public static isNormal: boolean = false;
     public static levelData: any[] = [];
     public static token: string = "1655913668332855296";
     public static currentLevelNum: number = 0;
